@@ -1,0 +1,18 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base/
+
+namespace: default
+
+labels:
+  - includeSelectors: true
+    pairs:
+      app: stock-alt-sentiment
+
+images:
+  - name: stock-alt-sentiment
+    newName: stock-alt-sentiment
+    newTag: latest

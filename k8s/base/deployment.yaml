@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-alt-sentiment
+  labels:
+    app: stock-alt-sentiment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-alt-sentiment
+  template:
+    metadata:
+      labels:
+        app: stock-alt-sentiment
+    spec:
+      containers:
+      - name: stock-alt-sentiment
+        image: stock-alt-sentiment:latest
+        ports:
+        - containerPort: 8080

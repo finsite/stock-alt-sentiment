@@ -1,8 +1,8 @@
 ---
-site_name: Template Python
-site_description: Documentation for the Template Python Project
+site_name: Stock Alt Sentiment
+site_description: Documentation for the Stock Alt Sentiment Project
 site_author: Mark Quinn
-repo_url: https://github.com/finsite/template_python
+repo_url: https://github.com/finsite/stock-alt-sentiment
 theme:
   name: material
 nav:
