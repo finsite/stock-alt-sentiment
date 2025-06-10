@@ -16,5 +16,3 @@ def get_rabbitmq_queue() -> str:
 def get_dlq_name() -> str:
     """Return the Dead Letter Queue (DLQ) name for this poller."""
     return get_config_value("DLQ_NAME", "stock_alt_geolocation_dlq")
-
-

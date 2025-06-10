@@ -12,8 +12,7 @@ logger = setup_logger(__name__)
 
 
 def process(payloads: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """
-    Process a batch of messages for sentiment analysis.
+    """Process a batch of messages for sentiment analysis.
 
     Each message must include a 'text' field. Sentiment polarity is computed,
     and both 'sentiment_score' and 'sentiment_label' are added to the output.
@@ -27,6 +26,7 @@ def process(payloads: list[dict[str, Any]]) -> list[dict[str, Any]]:
     -------
     list[dict[str, Any]]
         Enriched messages with sentiment data.
+
     """
     results: list[dict[str, Any]] = []
 
